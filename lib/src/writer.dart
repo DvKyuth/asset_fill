@@ -10,7 +10,7 @@ class Writer {
 
     final yamlEditor = YamlEditor(yamlDataAsStr);
     for (var path in paths) {
-      yamlEditor.appendToList(['flutter', 'assets'], "$path/");
+      yamlEditor.appendToList(['flutter', 'assets'], "lib/$path/");
     }
     pubspec.writeAsStringSync(yamlEditor.toString());
   }
