@@ -8,7 +8,7 @@ import 'package:asset_fill/src/writer.dart';
 /// Main function that does all work
 Future<void> main() async {
   // get structure
-  final dir = Directory('./assets');
+  final dir = Directory('./lib/assets');
   Map<String, dynamic> dirs = await GetPaths.getDirs(dir.path);
 
   // convert to strings
